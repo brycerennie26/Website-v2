@@ -1,0 +1,170 @@
+YPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryce Rennie | Travel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside class="tcg-widget" aria-labelledby="tcg-widget-title">
+        <h2 class="tcg-widget-title" id="tcg-widget-title">Card Prices</h2>
+        <p class="tcg-widget-text">Search a Pokemon card name to check current market pricing.</p>
+        <div class="tcg-search">
+            <input type="text" id="card-name-input" placeholder="Try Umbreon">
+            <button type="button" id="card-search-button">Search</button>
+        </div>
+        <div id="card-result" class="card-result">
+            <p>Search to load a card.</p>
+        </div>
+    </aside>
+
+    <aside class="clock-widget" aria-live="polite">
+        <span class="clock-time" id="live-clock">--:--:--</span>
+        <span class="clock-core" aria-hidden="true"></span>
+    </aside>
+
+    <aside class="greatball-chatbot">
+        <button
+            type="button"
+            class="greatball-toggle"
+            id="greatball-toggle"
+            aria-expanded="false"
+            aria-controls="greatball-panel"
+            aria-label="Open Great Ball chatbot">
+            <span class="greatball-accent greatball-accent-left" aria-hidden="true"></span>
+            <span class="greatball-accent greatball-accent-right" aria-hidden="true"></span>
+            <span class="greatball-center-ring" aria-hidden="true"></span>
+            <span class="greatball-center-core" aria-hidden="true"></span>
+        </button>
+
+        <div class="greatball-panel" id="greatball-panel" hidden>
+            <div class="greatball-panel-header">
+                <h2>Great Ball Chat</h2>
+                <p>Ask about Bryce, travel, Pokemon, music, and that is kinda it.</p>
+            </div>
+
+            <div class="greatball-messages" id="greatball-messages">
+                <div class="chatbot-message chatbot-message-bot">
+                    Hi! I am Bryce's site bot. Try asking about travel, Pokemon, music, resume, or contact links.
+                </div>
+            </div>
+
+            <form class="greatball-form" id="greatball-form">
+                <input type="text" id="greatball-input" placeholder="Ask something..." autocomplete="off">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </aside>
+
+    <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="travel.html">Travel</a>
+        <a href="resume-more.html">Resume and More</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <header>
+        <div class="header-gif-frame">
+            <img src="images/dragonite.gif" alt="Dragonite GIF" class="header-gif header-gif-left">
+        </div>
+        <div class="header-content">
+            <h1>Travel</h1>
+            <p>Photos, memories, and maps from places I have visited.</p>
+            <button type="button" class="header-button" id="see-interests-button">See Travel Highlights</button>
+        </div>
+        <div class="header-gif-frame">
+            <img src="images/char_x.gif" alt="Mega Charizard X GIF" class="header-gif header-gif-right">
+        </div>
+    </header>
+
+    <main>
+        <section id="interests">
+            <h2>Travel Highlights</h2>
+            <div class="interest-card">
+                <h3>Photo Collection One</h3>
+                <p>Some of my favorite travel moments and city views.</p>
+                <div class="travel-carousel">
+                    <input type="radio" name="travel-slide" id="travel-slide-1" checked>
+                    <input type="radio" name="travel-slide" id="travel-slide-2">
+                    <input type="radio" name="travel-slide" id="travel-slide-3">
+
+                    <div class="travel-carousel-window">
+                        <div class="travel-carousel-track">
+                            <img src="images/DSC_0213.JPG" alt="Bryce traveling with a city view behind him" class="travel-photo">
+                            <img src="images/JpnSkyline.JPG" alt="A skyline travel photo with mountains and clouds" class="travel-photo">
+                            <img src="images/DSC_0427.JPG" alt="A travel photo by the water with colorful buildings" class="travel-photo">
+                        </div>
+                    </div>
+
+                    <div class="travel-carousel-nav">
+                        <label for="travel-slide-1" class="travel-dot"></label>
+                        <label for="travel-slide-2" class="travel-dot"></label>
+                        <label for="travel-slide-3" class="travel-dot"></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="interest-card">
+                <h3>Photo Collection Two</h3>
+                <p>Another set of pictures from different trips and locations.</p>
+                <div class="travel-carousel">
+                    <input type="radio" name="travel-slide-two" id="travel-slide-two-1" checked>
+                    <input type="radio" name="travel-slide-two" id="travel-slide-two-2">
+                    <input type="radio" name="travel-slide-two" id="travel-slide-two-3">
+
+                    <div class="travel-carousel-window">
+                        <div class="travel-carousel-track">
+                            <img src="images/DSC_0910.JPG" alt="Bryce standing in the snow by a blue lake" class="travel-photo">
+                            <img src="images/DSC_0479.JPG" alt="Golden Gate Bridge travel photo" class="travel-photo">
+                            <img src="images/DSC_0692.JPG" alt="City travel photo with skyline in the background" class="travel-photo">
+                        </div>
+                    </div>
+
+                    <div class="travel-carousel-nav">
+                        <label for="travel-slide-two-1" class="travel-dot"></label>
+                        <label for="travel-slide-two-2" class="travel-dot"></label>
+                        <label for="travel-slide-two-3" class="travel-dot"></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="interest-card">
+                <h3>Travel Maps</h3>
+                <p>These maps show locations connected to my travel photos.</p>
+
+                <div class="travel-map">
+                    <h4>Tokyo Skytree Map</h4>
+                    <iframe
+                        title="Map of Tokyo Skytree in Tokyo, Japan"
+                        src="https://www.google.com/maps?q=Tokyo+Skytree,+Tokyo,+Japan&output=embed"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="travel-map">
+                    <h4>Crater Lake Map</h4>
+                    <iframe
+                        title="Map of Crater Lake"
+                        src="https://www.google.com/maps?q=Crater+Lake+National+Park&output=embed"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Built by Bryce Rennie with HTML and CSS.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
