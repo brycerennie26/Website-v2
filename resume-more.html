@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryce Rennie | Resume and More</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside class="tcg-widget" aria-labelledby="tcg-widget-title">
+        <h2 class="tcg-widget-title" id="tcg-widget-title">Card Prices</h2>
+        <p class="tcg-widget-text">Search a Pokemon card name to check current market pricing.</p>
+        <div class="tcg-search">
+            <input type="text" id="card-name-input" placeholder="Try Umbreon">
+            <button type="button" id="card-search-button">Search</button>
+        </div>
+        <div id="card-result" class="card-result">
+            <p>Search to load a card.</p>
+        </div>
+    </aside>
+
+    <aside class="clock-widget" aria-live="polite">
+        <span class="clock-time" id="live-clock">--:--:--</span>
+        <span class="clock-core" aria-hidden="true"></span>
+    </aside>
+
+    <aside class="greatball-chatbot">
+        <button
+            type="button"
+            class="greatball-toggle"
+            id="greatball-toggle"
+            aria-expanded="false"
+            aria-controls="greatball-panel"
+            aria-label="Open Great Ball chatbot">
+            <span class="greatball-accent greatball-accent-left" aria-hidden="true"></span>
+            <span class="greatball-accent greatball-accent-right" aria-hidden="true"></span>
+            <span class="greatball-center-ring" aria-hidden="true"></span>
+            <span class="greatball-center-core" aria-hidden="true"></span>
+        </button>
+
+        <div class="greatball-panel" id="greatball-panel" hidden>
+            <div class="greatball-panel-header">
+                <h2>Great Ball Chat</h2>
+                <p>Ask about Bryce, travel, Pokemon, music, or links.</p>
+            </div>
+
+            <div class="greatball-messages" id="greatball-messages">
+                <div class="chatbot-message chatbot-message-bot">
+                    Hi! I am Bryce's site bot. Try asking about travel, Pokemon, music, resume, or contact links.
+                </div>
+            </div>
+
+            <form class="greatball-form" id="greatball-form">
+                <input type="text" id="greatball-input" placeholder="Ask something..." autocomplete="off">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </aside>
+
+    <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="travel.html">Travel</a>
+        <a href="resume-more.html">Resume and More</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <header>
+        <div class="header-gif-frame">
+            <img src="images/dragonite.gif" alt="Dragonite GIF" class="header-gif header-gif-left">
+        </div>
+        <div class="header-content">
+            <h1>Resume and More</h1>
+            <p>A place for my background, experience, and future additions.</p>
+            <button type="button" class="header-button" id="see-interests-button">See This Page</button>
+        </div>
+        <div class="header-gif-frame">
+            <img src="images/char_x.gif" alt="Mega Charizard X GIF" class="header-gif header-gif-right">
+        </div>
+    </header>
+
+    <main>
+        <section id="interests">
+            <h2>Resume Overview</h2>
+            <div class="interest-card">
+                <h3>About This Page</h3>
+                <p>
+                    This page is where I can build out my resume, list experience, and share extra details about
+                    myself as my personal website continues to grow.
+                </p>
+            </div>
+
+            <div class="interest-card">
+                <h3>Experience</h3>
+                <p>
+                    Add jobs, responsibilities, school experience, or personal accomplishments here when you are ready.
+                </p>
+            </div>
+
+            <div class="interest-card">
+                <h3>Skills and More</h3>
+                <p>
+                    This can also become a place for technical skills, hobbies, goals, certifications, or anything
+                    else you want visitors to know.
+                </p>
+            </div>
+
+            <div class="interest-card">
+                <h3>My Resume</h3>
+                <p>
+                    You can view my resume directly on this page or open it in a separate tab.
+                </p>
+                <p>
+                    <a href="files/BrycesResume2025.pdf" target="_blank" class="social-link">Open resume PDF</a>
+                </p>
+                <div class="resume-viewer">
+                    <iframe
+                        src="files/BrycesResume2025.pdf"
+                        title="Bryce Rennie Resume PDF"
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Built by Bryce Rennie.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
